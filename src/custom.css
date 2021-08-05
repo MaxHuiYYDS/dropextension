@@ -1,0 +1,194 @@
+.chrome-plugin-demo-panel a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.chrome-plugin-demo-panel a:hover {
+    text-decoration: underline;
+    color: #ffee08;
+}
+
+.chrome-plugin-simple-tip {
+    position: fixed;
+    left: 20px;
+    padding: 16px 10px;
+    top: 30px;
+    color: white;
+    min-width: 150px;
+    max-width: 700px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 16px;
+    background: #70a800;
+    background-image: linear-gradient(to bottom, #95cc2a, #70a800);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    transition: top .4s;
+}
+
+.animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft
+}
+
+
+/* content页面 */
+.crawl-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #06c;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.savebutton {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #06c;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.modal-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.modal .modal-content {
+    position: relative;
+    z-index: 1001;
+    width: 632px;
+    margin: 100px auto auto;
+    height: 520px;
+    border-radius: 6px;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+
+.modal .save {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #06c;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.modal .modal-content .modal-title {
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal .modal-content .modal-close-btn {
+    position: absolute;
+    font-weight: normal;
+    font-size: 14px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.img-box {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 440px;
+    overflow-y: scroll;
+}
+
+.img-box .img-wrap {
+    box-sizing: border-box;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.img-box .img-wrap:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.img-box .img-wrap img {
+    max-width: 100%;
+}
