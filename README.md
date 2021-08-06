@@ -18,10 +18,9 @@
 Shop address: https://maxhui2021.myshopify.com/admin
 Login email: xuzhebin2015@gmail.com
 password: maxhui2021
-## Pending-to-do
+## Second development
 
-* It seems the webp pictures not successfully created by shopify create api.
-* I may ask the community in the future.
+* run yarn watch in root dirctory.
 ## Demo 
 ![image](https://user-images.githubusercontent.com/51693396/128052899-725c4b16-5b52-4632-9078-3dde3d02f26d.png)
 
