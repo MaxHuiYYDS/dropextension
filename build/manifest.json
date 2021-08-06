@@ -22,9 +22,7 @@
     "https://maxhui2021.myshopify.com/*"
   ],
   "content_scripts": [{
-    "matches": [
-      "<all_urls>"
-    ],
+    "matches": ["*://us.shein.com/*"],
     "run_at": "document_idle",
     "js": [
       "contentScript.js"

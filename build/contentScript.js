@@ -11063,7 +11063,12 @@ function addEXtract() {
     $(".product-intro__gallery img").each(function (i) {
       var src = $(this).attr("src");
       var realSrc = /^(http|https)/.test(src) ? src : location.protocol + src;
-      imgArr.push(realSrc);
+      if (realSrc.endsWith("webp")) {
+        realSrc = realSrc.replace("webp", "jpg");
+      }
+      if (!realSrc.includes("she_dist")) {
+        imgArr.push(realSrc);
+      }
     });
     var productDetails = $("<div></div>");
     var imgBox = $("<div class='img-box'></div>");
